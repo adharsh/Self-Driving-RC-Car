@@ -3,13 +3,15 @@ import serial
 import sys
 import time
 
+# Assumes in arduino.ino, TIME = 50
+
 TCP_IP = '129.2.200.255' # private ip
 TCP_PORT = 5005
 
 a = serial.Serial('\\.\COM1', 115200)
 
 def move(data):
-	if data < 20:
+	if data < 7:
 		a.write(chr(0).encode())		
 	else:
 		a.write(chr(1).encode())
