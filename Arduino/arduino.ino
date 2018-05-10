@@ -13,10 +13,10 @@ void loop()
 {
   if(Serial.available() > 0)
   {
-  	int cmd = Serial.read();
+    int cmd = Serial.read();
     Serial.println(cmd);
-  	switch(cmd)
-  	{
+    switch(cmd)
+    {
       case 0: straight(); rest(); delay(TIME); break;
 
      // single command
@@ -32,11 +32,11 @@ void loop()
       case 9: left(); reverse(); delay(TIME); break;
       
       default: Serial.print("Invalid Command\n"); break;
-  	}
+    }
   }
   else
   {
-  	straight();
-  	rest();
+    straight();
+    rest();
   }
 }
