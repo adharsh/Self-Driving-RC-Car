@@ -1,9 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 import socket
-import time
 
-TCP_IP = '129.2.200.255' //server ip
+TCP_IP = '129.2.200.255' # server ip
 TCP_PORT = 5005
 TRIG = 18
 ECHO = 23
@@ -44,6 +43,7 @@ def distance():
 	pulse_duration =  pulse_end - pulse_start
 
 	# print("Distance:", distance, "cm")
-	distance = round(pulse_duration * 17150, 2)
+	# distance = round(pulse_duration * 17150, 2)
+	distance = pulse_duration * 17150
 
 	return distance

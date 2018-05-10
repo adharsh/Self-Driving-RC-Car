@@ -17,7 +17,7 @@ void loop()
     Serial.println(cmd);
   	switch(cmd)
   	{
-      case 0: straight(); rest(); break;
+      case 0: straight(); rest(); delay(TIME); break;
 
      // single command
       case 1: forward(); delay(TIME); break;
