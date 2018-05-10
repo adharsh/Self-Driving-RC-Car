@@ -26,10 +26,10 @@ void loop()
       case 4: left(); delay(TIME); break;
 
      //combination command
-      case 6: forward(); right(); delay(TIME); break;
-      case 7: forward(); left(); delay(TIME); break;     
-      case 8: reverse(); right(); delay(TIME); break;     
-      case 9: reverse(); left(); delay(TIME); break;
+      case 6: right(); forward(); delay(TIME); break;
+      case 7: left(); forward(); delay(TIME); break;     
+      case 8: right(); reverse();  delay(TIME); break;     
+      case 9: left(); reverse(); delay(TIME); break;
       
       default: Serial.print("Invalid Command\n"); break;
   	}
