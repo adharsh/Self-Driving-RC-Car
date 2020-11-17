@@ -5,5 +5,5 @@ CMSC216H - Freshman Year, Second Semester
 | --- | --- |  
 | Side View | Aerial View |
 
-Project highlighted on UMD's CS Department page:
+Project highlighted on UMD's CS Department page:        
 https://www.facebook.com/watch/?v=2195492247144445
